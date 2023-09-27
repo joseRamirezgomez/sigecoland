@@ -5,15 +5,27 @@ import ContentSection from "~/components/content-section.astro";
 
 <ContentSection title="Sigecoin" id="intro">
   <Icon slot="eyebrow" name="logomark" class="h-32" />
-  <Fragment slot="lead">
+  <h2
+      class="gradient-text text-center font-extrabold tracking-tight text-6xl"
+    > misión</h2>
+  <p class="text-center font-extrabold tracking-tight text-2xl">
     Tiene como misión facilitar el trabajo de los empresarios y los 
     contadores, brindándoles una herramienta <span class="text-primary">fácil de usar, segura
       y eficiente</span>, que les permita llevar la <span class="text-primary">contabilidad </span> 
      de su negocio, generar reportes financieros, facturar
       electrónicamente, gestionar el stock de sus productos
        y optimizar sus procesos. 
-  </Fragment>
+  </p>
+  <h2
+      class="gradient-text text-center font-extrabold tracking-tight text-6xl"
+    > visión</h2>
+  <p class="text-center font-extrabold tracking-tight text-2xl">
+    Tiene como visión ser la empresa líder en el mercado latinoamericano de software 
+    contable e inventario, ofreciendo un producto de calidad, innovador y adaptado a las 
+    necesidades de cada cliente.</p>
+  
   <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+    
     <a
       href="https://docs.astro.build/"
       class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
@@ -30,3 +42,8 @@ import ContentSection from "~/components/content-section.astro";
     </a>
   </div>
 </ContentSection>
+<style>
+  p{
+    width: 650px;
+  }
+</style>

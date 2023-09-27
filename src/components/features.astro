@@ -2,13 +2,20 @@
 
 import { Image } from "@astrojs/image/components";
 import { authors } from "../content/authors";
-
+import ContentSection from "~/components/content-section.astro";
 ---
-
+<ContentSection title="¿Quienes somos?" id="features">
+  <Fragment slot="lead">
+    Sisgecoin es una empresa de software que ofrece soluciones integrales para la <span class="text-primary">gestión contable</span> 
+    y el control de <span class="text-primary">inventario</span> de las pequeñas y medianas empresas.
+    
+    <h2
+      class="gradient-text text-center font-extrabold tracking-tight text-6xl"
+    > Nuestro Equipo</h2>
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
       {
-        authors.slice(0, 5).map((item) => (
-          <div class="group">
+        authors.slice(0, 6).map((item) => (
+          <div class="group" >
             <div class="w-full aspect-square">
               <Image
                 src={item.image}
@@ -21,26 +28,17 @@ import { authors } from "../content/authors";
             </div>
 
             <div class="mt-4 text-center">
-              <h3 class="text-sm text-gray-500 dark:text-gray-300">
-                {" "}
-                {item.name}
-              </h3>
+              <a href={`${item.git}`} target="_blank" rel="noopener noreferrer">{" "}
+                {item.name}</a>
               <h2 class="text-sm text-gray-500 dark:text-gray-300">{" "}
                 {item.bio}</h2>
             </div>
-            <a href={`${item.git}`} target="_blank" rel="noopener noreferrer">github</a>
+            
           </div>
         ))
       }
     </div>
 
-    <div class="mx-auto max-w-xl text-center mt-14">
-      <p class="text-lg leading-relaxed text-gray-600 dark:text-gray-400">
-        We're a multi-cultural team from around the world! We come from diverse
-        backgrounds, bringing different personalities, experiences and skills to
-        the job. This is what makes our team so special.
-      </p>
-     
-    </div>
+    
   </Container>
 </Layout>
