@@ -2,13 +2,15 @@
 import { Icon } from "astro-icon";
 import ContentSection from "~/components/content-section.astro";
 import type { FeatureItem } from "~/types";
+import { authors } from "../content/authors";
 
+//import { Image } from 'astro:assets';
 const features: Array<FeatureItem> = [
   {
-    title: "Bring Your Own Framework",
+    title: "Jose Luis Ramirez Gomez",
     description:
       "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
-    icon: "mdi:handshake",
+    icon: "",
   },
   {
     title: "100% Static HTML, No JS",
@@ -43,24 +45,35 @@ const features: Array<FeatureItem> = [
 ];
 ---
 
-<ContentSection title="Features" id="features">
+<ContentSection title="¿Quienes somos?" id="features">
   <Fragment slot="lead">
-    Astro comes <span class="text-primary">batteries included</span>. It takes
-    the best parts of
-    <span class="text-primary">state-of-the-art</span>
-     tools and adds its own <span class="text-primary">innovations</span>.
+    Sisgecoin es una empresa de software que ofrece soluciones integrales para la <span class="text-primary">gestión contable</span> 
+    y el control de <span class="text-primary">inventario</span> de las pequeñas y medianas empresas.
+
   </Fragment>
-  <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+  <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
     {
-      features.map(({ title, description, icon }) => (
-        <li class="flex flex-col items-center gap-4 border border-default bg-offset p-6">
-          <div class="h-16 w-16 rounded-full border-2 border-current p-3">
-            <Icon name={icon} />
+      authors.slice(0, 3).map((item) => (
+        <div class="group">
+          <div class="w-full aspect-square">
+            <Image
+              src={item.image}
+              format="avif"
+              width={580}
+              height={580}
+              alt="Team"
+              class="w-full h-full object-cover rounded transition  group-hover:-translate-y-1 group-hover:shadow-xl"
+            />
           </div>
-          <p class="text-center font-extrabold text-xl">{title}</p>
-          <p class="text-center text-offset text-sm">{description}</p>
-        </li>
+
+          <div class="mt-4 text-center">
+            <h3 class="text-sm text-gray-500 dark:text-gray-300">
+              {" "}
+              {item.name}
+            </h3>
+          </div>
+        </div>
       ))
     }
-  </ul>
+  </div>
 </ContentSection>
