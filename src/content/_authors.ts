@@ -18,25 +18,25 @@ export interface Props {
     {
       name: "Daniela Guzman",
       image: "https://avatars.githubusercontent.com/u/124900219?v=4",
-      bio: "Microsoft Azure Certified Cloud Professional and a Google Certified Associate Cloud Engineer. A Data Analytics at Acme, specializing in the use of cloud infrastructure for Machine Learning and Deep Learning operation at scale.",
+      bio: "Desarrolladora web Stack MERN(MongoDB, Express, React y Node.js), cofundador de SIGECOIN donde se desempeñó como Front-end.",
       git: "https://github.com/Dannyg01",
     },
     {
       name: "Diomedez Diaz",
       image: "https://avatars.githubusercontent.com/u/124898882?v=4",
-      bio: "successful entrepreuner. She is the founder of Acme Inc, a bootstrapped business that builds affordable SaaS tools for local news, indie publishers, and other small businesses.",
+      bio: "Desarrollador web Stack MERN(MongoDB, Express, React y Node.js), cofundador de SIGECOIN donde se desempeñó como Back-end.",
       git: "https://github.com/DIOME09",
     },
     {
       name: "Marcos Montealegre",
       image: "https://avatars.githubusercontent.com/u/124897751?v=4",
-      bio: "successful entrepreuner. She is the founder of Acme Inc, a bootstrapped business that builds affordable SaaS tools for local news, indie publishers, and other small businesses.",
+      bio: "Desarrollador web Stack MERN(MongoDB, Express, React y Node.js), cofundador de SIGECOIN donde se desempeñó como Back-end.",
       git: "https://github.com/m4rquitos",
     },
     {
       name: "Luis Rogelio Marin",
       image: "https://avatars.githubusercontent.com/u/125270061?v=4",
-      bio: "successful entrepreuner. She is the founder of Acme Inc, a bootstrapped business that builds affordable SaaS tools for local news, indie publishers, and other small businesses.",
+      bio: "Desarrollador web Stack MERN(MongoDB, Express, React y Node.js), cofundador de SIGECOIN donde se desempeñó como Front-end.",
       git: "https://github.com/marinhtml",
     },
     {
