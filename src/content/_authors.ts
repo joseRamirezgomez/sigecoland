@@ -34,8 +34,8 @@ export interface Props {
       git: "https://github.com/m4rquitos",
     },
     {
-      name: "marin",
-      image: "https://avatars.githubusercontent.com/u/124897751?v=4",
+      name: "Luis Rogelio Marin",
+      image: "https://avatars.githubusercontent.com/u/125270061?v=4",
       bio: "successful entrepreuner. She is the founder of Acme Inc, a bootstrapped business that builds affordable SaaS tools for local news, indie publishers, and other small businesses.",
       git: "https://github.com/marinhtml",
     },
