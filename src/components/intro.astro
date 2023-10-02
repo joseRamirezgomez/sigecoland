@@ -6,16 +6,13 @@ import ContentSection from "~/components/content-section.astro";
 <ContentSection title="Sigecoin" id="intro">
   <Icon slot="eyebrow" name="logomark" class="h-32" />
   
-  <p class="text-center font-extrabold tracking-tight text-2xl">
-    Tiene como misión facilitar el trabajo de los empresarios y los 
-    contadores, brindándoles una herramienta <span class="text-primary">fácil de usar, segura
-      y eficiente</span>, que les permita llevar la <span class="text-primary">contabilidad </span> 
-     de su negocio, generar reportes financieros, facturar
-      electrónicamente, gestionar el stock de sus productos
-       y optimizar sus procesos ofreciendo un producto de calidad, innovador y adaptado a las 
-       necesidades de cada cliente. 
-  </p>
-  
+  <Fragment slot="lead">
+    Nuestra misión es simplificar la vida de los empresarios y contadores, proporcionándoles
+    una herramienta <span class="text-primary">accesible, segura y eficiente</span>. Con nuestro software, podrás <span class="text-primary">gestionar
+      la contabilidad </span>  de tu negocio, <span class="text-primary">generar informes financieros</span>, <span class="text-primary">emitir facturas </span> 
+     electrónicas, <span class="text-primary">supervisar el inventario</span> de tus productos y optimizar tus procesos. 
+     Nos comprometemos a ofrecer un producto de <span class="text-primary">alta calidad, innovador y personalizado</span> 
+      para satisfacer las necesidades únicas de cada cliente.
   <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
     
     <a
@@ -23,14 +20,14 @@ import ContentSection from "~/components/content-section.astro";
      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4" target="_blank"
     >
       <Icon pack="mdi" name="telescope" class="h-8" />
-      <span>Read the docs</span>
+      <span>Documentación</span>
     </a>
     <a
       href="https://github.com/DIOME09/SIGECOIN-PROYECT.git"
       class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4" target="_blank"
     >
       <Icon pack="mdi" name="rocket" class="h-8" />
-      <span>Try it out</span>
+      <span>Ver Demo</span>
     </a>
   </div>
 </ContentSection>
